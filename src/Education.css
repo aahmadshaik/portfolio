@@ -61,7 +61,7 @@
   margin-left: 100px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .education h2 {
     font-size: 1.6rem;
   }

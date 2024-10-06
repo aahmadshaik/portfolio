@@ -39,7 +39,7 @@
 }
 
 /* Mobile Styles for smaller screens 480px and below */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .about {
     padding: 20px 5px;
   }
