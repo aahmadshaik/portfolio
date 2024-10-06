@@ -1,77 +1,95 @@
 .skills {
-  background-color: #282a3a;
-  padding: 80px 20px;
-  height: 100vh;
+  background-color: #282a3a; /* Background color */
+  padding: 80px 20px; /* Padding around the section */
+  height: 100vh; /* Full viewport height */
 }
+
 .skills h2 {
-  color: #f0e68c;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-
-  max-width: 18rem;
-
-  text-align: start;
-
+  color: #f0e68c; /* Heading color */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+  max-width: 18rem; /* Maximum width for heading */
+  text-align: start; /* Align text to the start */
   margin: 3rem auto auto 3rem;
-  font-size: 2rem;
+  font-size: 2rem; /* Base font size */
 }
 
 .skills h2::first-letter {
-  color: white;
+  color: white; /* Coloring the first letter */
 }
 
 .skills-container {
-  margin-top: 4rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  /* max-width: 800px; */
-  flex-direction: row;
-  column-gap: 9rem;
-  row-gap: 3rem;
+  margin-top: 4rem; /* Margin above container */
+  display: flex; /* Flexbox for layout */
+  justify-content: center; /* Center align items */
+  flex-wrap: wrap; /* Wrap items to next line */
+  flex-direction: row; /* Default row direction */
+  column-gap: 9rem; /* Gap between columns */
+  row-gap: 3rem; /* Gap between rows */
 }
 
 .skill {
-  width: 10rem;
-  text-align: left;
-  color: white;
+  width: 10rem; /* Width for skill cards */
+  text-align: left; /* Align text to the left */
+  color: white; /* Text color */
 }
 
 .skill h4 {
-  font-size: 1rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  margin-bottom: 0.5rem;
-  color: white;
+  font-size: 1rem; /* Font size for skill names */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Shadow for text */
+  margin-bottom: 0.5rem; /* Margin below skill name */
+  color: white; /* Skill name color */
 }
 
 .skill-bar {
-  background-color: rgb(230, 234, 235);
-
-  overflow: hidden;
+  background-color: rgb(230, 234, 235); /* Background for skill bar */
+  overflow: hidden; /* Hide overflow */
+  border-radius: 5px; /* Rounded corners */
 }
 
 .skill-level {
-  background-color: #f5bd02;
-  height: 0.25rem;
-  text-align: right;
-
-  /* line-height: 6.25rem; */
-  color: white;
+  background-color: #f5bd02; /* Background color for skill level */
+  height: 0.25rem; /* Height of skill level bar */
+  text-align: right; /* Align text to the right */
+  line-height: 0.25rem; /* Centering text vertically */
+  color: white; /* Text color */
 }
 
 @media (max-width: 768px) {
   .skills {
-    padding: 40px 10px;
+    padding: 60px 20px; /* Adjust padding for medium screens */
     height: auto; /* Auto height for skills section */
+  }
+
+  .skills-container {
+    column-gap: 4rem; /* Reduced gap for medium screens */
+  }
+
+  .skill {
+    width: 12rem; /* Slightly increased width for skill cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .skills {
+    padding: 10px 10px; /* Reduced padding for small screens */
+    height: auto; /* Auto height for skills section */
+  }
+  .skills h2 {
+    font-size: 8vw;
+    /* max-width: 10px; */
+    text-align: center;
   }
 
   .skills-container {
     flex-direction: column; /* Stack skill cards vertically */
     align-items: center; /* Center align skill cards */
+    margin-bottom: 40px;
     gap: 2rem; /* Smaller gap between skill cards */
   }
 
   .skill {
     width: 90%; /* Full width for skill cards */
-    text-align: left; /* Center text for better readability */
+    /* margin-bottom: 20px; */
+    text-align: left; /* Left align text for readability */
   }
 }

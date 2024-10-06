@@ -79,7 +79,7 @@ p {
   height: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .hero {
     height: auto; /* Allow the height to adjust based on content */
     padding: 20px 10px; /* Add padding for better spacing */
@@ -88,20 +88,20 @@ p {
   }
 
   .hero img {
-    width: 120px; /* Adjust image size for mobile */
-    height: 120px; /* Maintain aspect ratio */
-    margin-bottom: 15px; /* Space below the image */
+    width: 100px; /* Adjust image size for mobile */
+    height: 100px; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below the image */
   }
 
   .hero h1 {
-    font-size: 2.5rem; /* Smaller font size for headings on mobile */
-    margin: 10px 0; /* Add margin for spacing */
+    font-size: 1.9rem; /* Smaller font size for headings on mobile */
+    margin: 5px 0;
     text-align: center; /* Center the heading */
   }
 
   p {
-    font-size: 1rem; /* Smaller font size for paragraph text */
-    margin: 0 10px; /* Add margin for better spacing */
+    font-size: 0.9rem; /* Smaller font size for paragraph text */
+    margin: 0 15px;
     text-align: center; /* Center paragraph text */
   }
 
