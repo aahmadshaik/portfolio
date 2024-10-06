@@ -1,0 +1,30 @@
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+}
+/* Responsive Padding for Footer */
+@media (max-width: 768px) {
+  footer {
+    padding: 15px 0;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 10px 0; /* Reduced padding for footer */
+  }
+
+  footer p {
+    font-size: 0.9rem; /* Smaller font size for footer text */
+  }
+}
