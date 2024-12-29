@@ -50,7 +50,13 @@ const Projects = () => {
                 rel="noreferrer"
                 className="pr-btn"
               >
-                Live Demo
+                <button class="button">
+                  <span class="shadow"></span>
+                  <span class="edge"></span>
+                  <div class="front">
+                    <span>Live Demo</span>
+                  </div>
+                </button>
               </a>
               <a
                 href={project.gitHubLink}
@@ -58,11 +64,43 @@ const Projects = () => {
                 rel="noreferrer"
                 className="pr-btn"
               >
-                GitHub
+                <button class="button">
+                  <span class="shadow"></span>
+                  <span class="edge"></span>
+                  <div class="front">
+                    <span>GitHub</span>
+                  </div>
+                </button>
               </a>
             </div>
           </div>
         ))}
+        <div className="button-div">
+          <a
+            href="https://github.com/aahmadshaik"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button class="animated-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="arr-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+              </svg>
+              <span class="text">More</span>
+              <span class="circle"></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="arr-1"
+                viewBox="0 0 24 24"
+              >
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+              </svg>
+            </button>
+          </a>
+        </div>
       </div>
     </section>
   );

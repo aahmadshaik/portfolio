@@ -10,7 +10,7 @@
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
-
+  text-align: left;
   /* row-gap: 10px; */
 }
 .contact-info h1 {
@@ -36,20 +36,25 @@
   text-decoration: none;
   /* text-align: left; */
   color: #ffffff;
+  margin-top: 5px;
 }
 .contact-info .logo {
   margin-right: 10px;
+  /* margin-top: 100px; */
 }
 
 .connect h1 {
   margin-top: 40px;
+
   font-weight: 600;
   /* display: flex; */
   font-size: var(--font-p);
   /* border: 2px solid red; */
   color: #ffffff;
 }
-
+.contact-link {
+  display: flex;
+}
 .connect img {
   width: 30px;
   height: 30px;
