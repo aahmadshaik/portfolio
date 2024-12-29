@@ -1,8 +1,12 @@
 footer {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 95px;
   background-color: #333; /* Background color */
   color: white; /* Text color */
-  padding: 20px 2vw; /* Fluid padding to accommodate various screen sizes */
-  text-align: center; /* Center align text */
 }
 
 footer p {
@@ -13,7 +17,6 @@ footer p {
 /* Responsive Padding and Font Size for Footer */
 @media (max-width: 768px) {
   footer {
-    padding: 15px 2vw; /* Adjusted padding for tablet sizes */
   }
 
   footer p {
@@ -23,10 +26,9 @@ footer p {
 
 @media (max-width: 480px) {
   footer {
-    padding: 10px 2vw; /* Further reduced padding for small screens */
   }
 
   footer p {
-    font-size: 0.9rem; /* Smaller font size for very small screens */
+    font-size: var(--font-p); /* Smaller font size for very small screens */
   }
 }

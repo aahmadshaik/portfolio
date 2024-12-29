@@ -1,5 +1,5 @@
 import React from "react";
-import "../Achievements.css";
+import "../styles/Achievements.css";
 const certifications = [
   {
     name: "Responsive Web Design - freeCodeCamp",
@@ -40,11 +40,10 @@ const certifications = [
 const Achievements = () => {
   return (
     <section id="certificates" className="ceertificates">
-      <h2> certifications </h2>
+      <h2>certifications</h2>
       <div className="certificate-container">
         {certifications.map((certificate) => (
           <div key={certificate.name} className="certificate">
-            {/* <img src={certificate.image} alt={certificate.name} /> */}
             <div className="certificates-details">
               <a href={certificate.link} target="_blank" rel="noreferrer">
                 <h3>{certificate.name}</h3>

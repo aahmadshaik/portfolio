@@ -1,5 +1,5 @@
 import React from "react";
-import "../Projects.css";
+import "../styles/Projects.css";
 import spotifyimg from "../assests/spotifyimg.jpg";
 import calimg from "../assests/calimg.png";
 import brandimg from "../assests/brandimg.png";

@@ -1,4 +1,6 @@
 .education {
+  margin: 40px;
+  padding: 40px;
   background-color: #282a3a;
   height: auto; /* Allowing height to adjust automatically */
 }
@@ -7,9 +9,10 @@
   color: #f0e68c;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
   max-width: 18rem; /* Limiting the width for better alignment */
-  text-align: start; /* Align text to the start */
-  margin: 3rem auto auto 3rem; /* Centering margins */
-  font-size: 2rem; /* Base font size */
+  text-align: left; /* Align text to the start */
+  /* margin-left: 40px; */
+
+  font-size: var(--font-h3);
 }
 
 .education h2::first-letter {
@@ -23,7 +26,7 @@
 }
 
 .education h3 {
-  font-size: 1.5rem; /* Base font size for headings */
+  font-size: var(--font-h3);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Adding shadow for depth */
   color: #e6e6e6; /* Heading color */
   text-align: left; /* Left-aligning headings */
@@ -32,7 +35,7 @@
 }
 
 .education p {
-  font-size: 16px; /* Base font size for paragraphs */
+  font-size: var(--font-p);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Shadow for depth */
   color: #e6e6e6; /* Paragraph color */
   text-align: left; /* Left-aligning text */
@@ -43,7 +46,7 @@
 }
 
 .education h4 {
-  font-size: 1rem; /* Base font size for sub-headings */
+  font-size: var(--font-small);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Shadow for depth */
   color: #e6e6e6; /* Sub-heading color */
   text-align: left; /* Left-aligning text */
@@ -70,24 +73,33 @@
 
 /* Smaller devices */
 @media (max-width: 480px) {
+  .education {
+    /* margin: 10px; */
+    margin: 0;
+    /* padding: 0; */
+    /* text-align: left; */
+  }
   .education h2 {
-    text-align: center;
-    font-size: 8vw; /* Smaller font size for very small screens */
+    /* margin: 20px; */
+    max-width: 200px;
+    /* margin-left: 20px; */
+    font-size: var(--font-h3);
+    text-align: left;
   }
   .education h3 {
-    font-size: 1.2rem; /* Smaller font size for headings */
-    margin-left: 20px; /* Reduce left indent */
+    font-size: var(--font-h3);
+    margin-left: 20px;
   }
   .education p {
-    font-size: 0.9rem; /* Smaller font size for paragraphs */
-    margin-left: 20px; /* Reduce left indent */
+    /* text-wrap: balance; */
+    width: 100%;
+    margin-left: 20px;
   }
   .education h4 {
-    font-size: 0.8rem; /* Smaller font size for sub-headings */
     margin-left: 20px; /* Reduce left indent */
   }
   .education-item {
-    margin: 40px auto; /* Adjusting margins for smaller devices */
+    margin: 40px auto;
     width: 100%; /* Full width for items */
   }
 }

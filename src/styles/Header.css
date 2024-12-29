@@ -6,8 +6,7 @@ header {
   top: 0;
   z-index: 1000;
   width: 100%;
-  /* margin-top: 200px; */
-  height: 10vh;
+  height: 11vh;
 }
 
 nav ul {
@@ -18,19 +17,18 @@ nav ul {
 }
 
 nav ul li {
+  font-size: var(--font-p);
   display: inline;
 }
 
 nav ul li a {
   color: #c0c0c0;
   text-transform: uppercase;
-  /* font-weight: bold; */
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-family);
   font-optical-sizing: auto;
-  /* font-weight: <weight>; */
   font-style: normal;
   padding: 5px 10px;
-  transition: 0.3s;
+  transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease; /* Smooth transitions */
 }
 
 nav ul li a:hover {

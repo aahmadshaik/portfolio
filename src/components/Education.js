@@ -1,10 +1,10 @@
 import React from "react";
-import "../Education.css";
+import "../styles/Education.css";
 
 const Education = () => {
   return (
     <section id="education" className="education">
-      <h2> Experience & Education </h2>
+      <h2>Experience & Education</h2>
       <div className="education-item">
         <h3>Bachelor's Degree in Computer Science</h3>
         <h4 className="clgname">

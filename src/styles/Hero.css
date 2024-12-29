@@ -2,12 +2,14 @@
   display: flex;
   position: relative;
   flex-direction: column;
+  /* gap: 10px;
+   */
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: rgba(7, 7, 7, 0.991);
   /* object-fit: contain; */
-  background-image: url(./assests/bg.avif);
+  background-image: url(../assests/bg.avif);
   /* color: white; */
   /* background-size: 80%; */
   background-size: 90% 350px;
@@ -41,7 +43,7 @@
   color: whitesmoke; /* Adjust text color for contrast */
   text-align: center;
   /* padding-top: 50px; */
-  font-size: 4rem;
+  font-size: var(--font-h1);
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   /* font-weight: <weight>; */
@@ -51,7 +53,7 @@
   /* text-shadow: 2px 2px 5px rgba(90, 126, 164, 0.989); */
 }
 p {
-  font-size: 1.2rem;
+  font-size: var(--font-p);
   z-index: 2;
   color: whitesmoke;
   font-family: "Cinzel", serif;

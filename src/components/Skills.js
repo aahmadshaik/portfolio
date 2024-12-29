@@ -1,5 +1,5 @@
 import React from "react";
-import "../Skills.css";
+import "../styles/Skills.css";
 
 const skills = [
   { name: "HTML", level: "80%" },
@@ -25,9 +25,7 @@ const Skills = () => {
           <div key={skill.name} className="skill">
             <h4>{skill.name}</h4>
             <div className="skill-bar">
-              <div className="skill-level" style={{ width: skill.level }}>
-                {/* {skill.level} */}
-              </div>
+              <div className="skill-level" style={{ width: skill.level }}></div>
             </div>
           </div>
         ))}
