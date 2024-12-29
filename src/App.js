@@ -8,11 +8,13 @@ import Education from "./components/Education";
 import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import PopUp from "./components/PopUp";
 import "./App.css";
 
 const App = () => {
   return (
     <div>
+      <PopUp />
       <Hero />
       <Header />
       <About />

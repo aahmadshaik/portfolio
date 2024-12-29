@@ -35,11 +35,11 @@
 .project {
   display: flex; /* Flexbox for layout */
   align-items: center; /* Center items vertically */
-  background-color: white; /* Background color for project card */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for project card */
   border-radius: 20px; /* Rounded corners */
   overflow: hidden; /* Hide overflow */
   width: 100%; /* Full width for project cards */
+  background-color: #f5efe7;
 }
 
 .project img {
