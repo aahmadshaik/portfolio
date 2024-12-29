@@ -1,34 +1,46 @@
 import React from "react";
 import "../styles/Projects.css";
-import spotifyimg from "../assests/spotifyimg.jpg";
-import calimg from "../assests/calimg.png";
-import brandimg from "../assests/brandimg.png";
+import quiz from "../assests/Quiz-App pic.png";
+import weather from "../assests/weather app pic.png";
+import game from "../assests/four games photo.png";
+import UI from "../assests/student portal UI pic .png";
 
 const projects = [
   {
-    name: "Spotify Clone",
-    liveLink: "https://spotify-c-flame.vercel.app/",
-    gitHubLink: "https://github.com/aahmadshaik/Spotify-C.git",
+    name: "Real time weather monitoring app",
+    liveLink: "https://real-time-weather-monitoring-system.vercel.app/",
+    gitHubLink:
+      "https://github.com/aahmadshaik/Real-Time-Weather-Monitoring-System.git",
     description:
-      "Built with React and Spotify API for real-time data fetching.",
-    technologies: "React, TailwindCss, JavaScript ",
-    image: spotifyimg, // Ensure the image path is correct
+      "Fetched data from an external API to display the weather of major cities. Users can set a threshold, and updates are shown on the screen when the threshold is crossed.",
+    technologies: "React, CSS, JavaScript",
+    image: weather, // Ensure the image path is correct
   },
   {
-    name: "Brand Landing Page",
-    liveLink: "https://brand-landing-page-tan.vercel.app/",
-    gitHubLink: "https://github.com/aahmadshaik/Brand-Landing-Page.git",
-    description: "Responsive landing page using Flexbox and CSS Grid.",
-    technologies: "React, CSS, JavaScript ",
-    image: brandimg, // Ensure the image path is correct
+    name: "Student portal UI",
+    liveLink: "https://student-portal-ui-wheat.vercel.app/",
+    gitHubLink: "https://github.com/aahmadshaik/Student-Portal-UI.git",
+    description:
+      "Pixel-perfect implementation of a Figma design for a student portal interface.",
+    technologies: "React, CSS, Figma",
+    image: UI, // Ensure the image path is correct
   },
   {
-    name: "Calculator",
-    liveLink: "https://calculator-three-ruddy.vercel.app/",
-    gitHubLink: "https://github.com/aahmadshaik/Calculator.git",
-    description: "Interactive calculator built using React.",
-    technologies: "React, CSS, JavaScript ",
-    image: calimg, // Ensure the image path is correct
+    name: "Quiz App",
+    liveLink: "https://quiz-app-de4x.vercel.app/",
+    gitHubLink: "https://github.com/aahmadshaik/Quiz-App.git",
+    description:
+      "Fetches data from the Trivia API, displays categories, number of questions, and difficulty levels. Calculates and displays the score percentage after answering.",
+    technologies: "React, CSS, Third-party UI",
+    image: quiz, // Ensure the image path is correct
+  },
+  {
+    name: "Connect four game",
+    liveLink: "https://connect-4-game-bay.vercel.app/",
+    gitHubLink: "https://github.com/aahmadshaik/Connect-4-Game.git",
+    description: " A classic two-player strategy game built with React.",
+    technologies: "React, CSS",
+    image: game, // Ensure the image path is correct
   },
 ];
 
@@ -42,8 +54,15 @@ const Projects = () => {
             <img src={project.image} alt={project.name} />
             <div className="project-details">
               <h3>{project.name}</h3>
-              <p>{project.description}</p>
-              <p> Technologies used : {project.technologies}</p>
+              <p>
+                <b>Description : </b>
+                {project.description}
+              </p>
+              <p>
+                {" "}
+                <b>Technologies used : </b>
+                {project.technologies}
+              </p>
               <a
                 href={project.liveLink}
                 target="_blank"
