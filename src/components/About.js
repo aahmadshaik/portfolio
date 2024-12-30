@@ -14,6 +14,13 @@ const About = () => {
         My goal is to contribute to innovative teams and build solutions that
         exceed expectations.
       </p>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://github.com/aahmadshaik/Resume/blob/main/Ahmad%20Aslam%20FrontEnd%20Resume.pdf"
+      >
+        <button class="resume">Resume</button>
+      </a>
     </section>
   );
 };
