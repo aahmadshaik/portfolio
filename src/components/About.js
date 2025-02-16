@@ -19,7 +19,7 @@ const About = () => {
         rel="noreferrer"
         href="https://github.com/aahmadshaik/Resume/blob/main/Ahmad%20Aslam%20FrontEnd%20Resume.pdf"
       >
-        <button class="resume">Resume</button>
+        <button class="resume">My Journey</button>
       </a>
     </section>
   );

@@ -15,7 +15,8 @@
 .resume {
   --color: #00a97f;
   --color2: rgb(10, 25, 30);
-  padding: 0.8em 1.75em;
+  /* padding: 0.8em 1.75em; */
+  padding: 10px;
   background-color: transparent;
   border-radius: 6px;
   border: 0.3px solid var(--color);
@@ -24,11 +25,12 @@
   overflow: hidden;
   cursor: pointer;
   z-index: 1;
-  font-weight: 300;
+  font-weight: 600;
   font-size: var(--font-small);
   font-family: "Roboto", "Segoe UI", sans-serif;
   text-transform: uppercase;
   color: var(--color);
+  /* font-size: 15px; */
 }
 
 .resume::after,
