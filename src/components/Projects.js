@@ -4,8 +4,18 @@ import quiz from "../assests/Quiz-App pic.png";
 import weather from "../assests/weather app pic.png";
 import game from "../assests/four games photo.png";
 import UI from "../assests/student portal UI pic .png";
+import chefClaude from "../assests/Screenshot 2025-02-16 223437.png";
 
 const projects = [
+  {
+    name: "Chef-Claude",
+    liveLink: "https://chef-claude-mu.vercel.app/",
+    gitHubLink: "https://github.com/aahmadshaik/Chef-Claude",
+    description:
+      "Engineered an AI-powered recipe generator using Hugging Face API for smart ingredient-based recommendations.",
+    technologies: " React.js, Hugging Face AI, CSS, Figma",
+    image: chefClaude,
+  },
   {
     name: "Real time weather monitoring app",
     liveLink: "https://real-time-weather-monitoring-system.vercel.app/",

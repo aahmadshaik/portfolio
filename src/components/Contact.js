@@ -31,23 +31,35 @@ const Contact = () => {
       </div>
       <div className="connect">
         <h1>CONNECT WITH ME </h1>
-        <a href="https://www.linkedin.com/in/ahmad-shaik-web-developer">
+        <a
+          href="https://www.linkedin.com/in/ahmad-shaik-web-developer"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000"
             alt="linkedin logo"
           ></img>
         </a>
-        <a href="https://github.com/aahmadshaik">
+        <a
+          href="https://github.com/aahmadshaik"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src="https://img.icons8.com/?size=100&id=SzgQDfObXUbA&format=png&color=000000"
             alt="GitHub logo"
           ></img>
         </a>
-        <a href="dm.wa.link/zh7ieh">
+        <a
+          href="https://wa.me/9701924456"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000"
-            alt="Wap logo"
-          ></img>
+            alt="WhatsApp Logo"
+          />
         </a>
       </div>
       <button onClick={handleButtonClick} class="button-54" role="button">

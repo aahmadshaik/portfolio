@@ -14,7 +14,7 @@ const Education = () => {
           I completed my Bachelor's in Computer Science 2019 - 2024 from SKBR
           College, affiliated with Adikavi Nannaya University (AKNU). My
           education provided me with a strong foundation in programming, data
-          structures, web development, and database management.{" "}
+          structures, web development, and database management.
         </p>
       </div>
       <div className="education-item">

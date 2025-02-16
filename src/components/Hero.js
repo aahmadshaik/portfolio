@@ -24,7 +24,11 @@ const Hero = () => {
             alt="GitHub logo"
           ></img>
         </a>
-        <a href="dm.wa.link/zh7ieh">
+        <a
+          href="https://wa.me/9701924456"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000"
             alt="Wap logo"
