@@ -2,6 +2,13 @@ import React from "react";
 import "../styles/Achievements.css";
 const certifications = [
   {
+    name: "FrontEnd Career Path - Scrimba",
+    link: "",
+    image: "",
+    description:
+      "Currently learning modern frontend development, React, JavaScript, and responsive design through hands-on projects. Enhancing problem-solving skills and staying updated with industry best practices.",
+  },
+  {
     name: "Responsive Web Design - freeCodeCamp",
     link: "https://freecodecamp.org/certification/aahmadshaik/responsive-web-design",
     image: "",
