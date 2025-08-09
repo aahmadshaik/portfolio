@@ -11,7 +11,7 @@ const Education = () => {
     {
       title: "Intermediate (MPC)",
       subtitle: "Educare Junior College",
-      period: "2019 - 2021",
+      period: "Jun 2019 - Apr 2021",
     },
   ];
   return (
