@@ -35,7 +35,7 @@ const Hero = ({ theme }) => {
               <span className="text-[#78a9ff]">React</span>.
             </h2>
             <p className="mt-6 text-slate-500 dark:text-slate-300 max-w-xl">
-              I’m Ahmad — a front-end developer from Bengaluru. I craft
+              I’m Aslam — a front-end developer from Bengaluru. I craft
               pixel-perfect designs into fast, accessible React applications and
               ship them with CI/CD. I focus on clean code, responsive layouts,
               and solid UX.

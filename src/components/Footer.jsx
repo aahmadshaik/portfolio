@@ -64,7 +64,7 @@ const Footer = ({ theme }) => {
         </div>
       </div>
       <p className="mt-6 text-xs text-slate-500">
-        Designed & built by Ahmad Shaik
+        Designed & built by Aslam Shaik
       </p>
     </footer>
   );
