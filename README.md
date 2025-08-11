@@ -1,12 +1,35 @@
-# React + Vite
+# 🌐 Shaik Ahmad Aslam — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal developer portfolio built with **React**, showcasing my projects, skills, and experience as a Front-End Developer.  
+Deployed live using **Vercel** 🚀.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
+[Visit Portfolio](https://aslam-portfolio.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
+- **Responsive Design** — Works smoothly on all devices.
+- **Modern UI/UX** — Clean, minimal, and user-friendly.
+- **Project Showcase** — Detailed descriptions, live links, and GitHub repos.
+- **Smooth Animations** — Interactive and engaging transitions.
+- **Contact Form** — Easy way to connect with me.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+- **Frontend:** React, Tailwind CSS / CSS3, JavaScript (ES6+)
+- **Deployment:** Vercel
+- **Version Control:** Git & GitHub
+
+---
+
+## 📬 Contact
+- **Portfolio:** [aslam-portfolio.vercel.app](https://aslam-portfolio.vercel.app)
+- **GitHub:** [github.com/aahmadshaik](https://github.com/aahmadshaik)
+- **LinkedIn:** [linkedin.com/in/ahmad-shaik-web-developer](https://linkedin.com/in/ahmad-shaik-web-developer)
+- **Email:** shaikahmadaslam@gmail.com
+
+---
+
+⭐ If you like this portfolio, feel free to fork and give it a star!
