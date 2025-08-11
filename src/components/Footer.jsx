@@ -32,7 +32,7 @@ const Footer = ({ theme }) => {
             className="flex items-center gap-2 px-3 py-2 rounded-md bg-slate-100 dark:bg-white/5"
             title="WhatsApp"
           >
-            <FaWhatsapp /> <span>+91 6361618047</span>
+            <FaWhatsapp /> <span>+91 9701924456</span>
           </a>
           <a
             href="https://github.com/aahmadshaik"

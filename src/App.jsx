@@ -31,8 +31,9 @@ const App = () => {
       <Header toggleTheme={toggleTheme} theme={theme} />
       <Hero theme={theme} />
       <Projects theme={theme} />
-      <Education />
       <Experience />
+
+      <Education />
       <Certifications theme={theme} />
       <Footer theme={theme} />
     </div>
