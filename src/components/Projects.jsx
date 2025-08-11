@@ -6,14 +6,14 @@ const Projects = ({ theme }) => {
       title: "Alertr - Alert & Complaint Platform",
       company: "DigiDxDoc",
       desc: "Role-based dashboards, multi-tenant modules, media uploads, and responsive design.",
-      link: "#projects",
+      link: "https://app.myalertr.com/",
     },
 
     {
       title: "Image Flow Radiology",
       company: "DigiDxDoc",
       desc: "Developing multi-tenant modules for radiology image management with role-based access and organization-specific workflows.",
-      link: "#projects",
+      link: "https://medxrad-staging.digidxdoc.com/",
     },
     {
       title: "Physiomax (Client)",
