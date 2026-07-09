@@ -12,6 +12,7 @@ export const profile = {
   email: "shaikahmadaslam@gmail.com",
   phoneDisplay: "+91 97019 24456",
   whatsapp: "919701924456",
+  resume: "/Aslam-Shaik-Resume.pdf",
   links: {
     portfolio: "https://aslam-portfolio.vercel.app/",
     linkedin: "https://www.linkedin.com/in/ahmad-shaik-web-developer/",

@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import { ArrowUpRightIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
+import { ArrowUpRightIcon, EnvelopeIcon, ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import Reveal from "./Reveal";
 import { profile } from "../data/portfolio";
 
@@ -28,16 +28,25 @@ const Footer = () => {
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <a
             href={`mailto:${profile.email}`}
-            className="inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-accent-contrast transition-transform hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 rounded-xl bg-accent h-11 px-5 text-sm font-semibold text-accent-contrast transition-transform hover:-translate-y-0.5"
           >
             <EnvelopeIcon className="h-4 w-4" aria-hidden="true" />
             {profile.email}
           </a>
           <a
             href={`tel:+${profile.whatsapp}`}
-            className="inline-flex items-center gap-2 rounded-xl border border-line bg-elevated px-5 py-3 text-sm font-semibold text-ink transition-colors hover:border-accent/60"
+            className="inline-flex items-center gap-2 rounded-xl border border-line bg-elevated h-11 px-5 text-sm font-semibold text-ink transition-colors hover:border-accent/60"
           >
             {profile.phoneDisplay}
+          </a>
+          <a
+            href={profile.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-xl border border-line bg-elevated h-11 px-5 text-sm font-semibold text-ink transition-colors hover:border-accent/60"
+          >
+            <ArrowDownTrayIcon className="h-4 w-4" aria-hidden="true" />
+            Résumé
           </a>
         </div>
 

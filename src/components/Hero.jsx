@@ -1,4 +1,4 @@
-import { ArrowDownRightIcon, ArrowUpRightIcon } from "@heroicons/react/24/outline";
+import { ArrowDownRightIcon, ArrowUpRightIcon, ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { profile, stats } from "../data/portfolio";
 
@@ -37,16 +37,19 @@ const Hero = () => {
             <div className="animate-enter mt-8 flex flex-wrap items-center gap-3 [animation-delay:240ms]">
               <a
                 href="#work"
-                className="group inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-accent-contrast transition-transform hover:-translate-y-0.5"
+                className="group inline-flex items-center gap-2 rounded-xl bg-accent h-11 px-5 text-sm font-semibold text-accent-contrast transition-transform hover:-translate-y-0.5"
               >
                 View selected work
                 <ArrowDownRightIcon className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
               </a>
               <a
-                href={`mailto:${profile.email}`}
-                className="inline-flex items-center gap-2 rounded-xl border border-line bg-elevated px-5 py-3 text-sm font-semibold text-ink transition-colors hover:border-accent/60"
+                href={profile.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 rounded-xl border border-line bg-elevated h-11 px-5 text-sm font-semibold text-ink transition-colors hover:border-accent/60"
               >
-                Get in touch
+                <ArrowDownTrayIcon className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
+                Résumé
               </a>
               <div className="flex items-center gap-1 pl-1">
                 <a
