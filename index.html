@@ -2,9 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aslam - Portfolio</title>
+
+    <title>Aslam Shaik — Frontend Engineer (React &amp; TypeScript)</title>
+    <meta
+      name="description"
+      content="Aslam Shaik is a Frontend Engineer in Hyderabad specializing in React.js and TypeScript, shipping production features end to end — architecture, real-time UI, performance, and observability."
+    />
+    <meta name="author" content="Aslam Shaik" />
+    <meta name="theme-color" content="#04060f" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f5f5f1" media="(prefers-color-scheme: light)" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Aslam Shaik — Frontend Engineer" />
+    <meta
+      property="og:description"
+      content="React.js & TypeScript engineer shipping production features end to end."
+    />
+    <meta property="og:url" content="https://aslam-portfolio.vercel.app/" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesque:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Set the theme before first paint to avoid a flash of the wrong theme.
+         Modes: "light" | "dark" | "system" (default: dark). -->
+    <script>
+      (function () {
+        try {
+          var mode = localStorage.getItem("theme");
+          var isDark;
+          if (mode === "light") isDark = false;
+          else if (mode === "system")
+            isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          else isDark = true; // "dark" or unset → dark-first default
+          document.documentElement.classList.toggle("dark", isDark);
+        } catch (e) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

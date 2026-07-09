@@ -1,65 +1,38 @@
-import React from "react";
+import Reveal from "./Reveal";
+import SectionHeading from "./SectionHeading";
+import { projects } from "../data/portfolio";
 
-const Projects = ({ theme }) => {
-  const projects = [
-    {
-      title: "Alertr - Alert & Complaint Platform",
-      company: "DigiDxDoc",
-      desc: "Role-based dashboards, multi-tenant modules, media uploads, and responsive design.",
-      link: "https://app.myalertr.com/",
-    },
-
-    {
-      title: "Image Flow Radiology",
-      company: "DigiDxDoc",
-      desc: "Developing multi-tenant modules for radiology image management with role-based access and organization-specific workflows.",
-      link: "https://medxrad-staging.digidxdoc.com/",
-    },
-    {
-      title: "Physiomax (Client)",
-      company: "Sense Semiconductor & IT Solutions Pvt. Ltd.",
-      desc: "Healthcare UI — responsive React build converted from Figma.",
-      link: "#projects",
-    },
-  ];
-
+const Projects = () => {
   return (
-    <section id="projects" className="max-w-6xl mx-auto px-6 py-12">
-      <h3 className="text-2xl font-bold mb-6">Selected Projects</h3>
-      <div className="grid md:grid-cols-3 gap-6">
-        {projects.map((p) => (
-          <article
-            key={p.title}
-            className={`rounded-xl p-5 ring-1 ${
-              theme === "dark"
-                ? "bg-gradient-to-br from-[#05102a] to-black ring-white/5"
-                : "bg-white ring-slate-200 shadow-sm"
-            }`}
+    <section id="work" aria-labelledby="work-title" className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+      <SectionHeading id="work-title" index="03" eyebrow="Selected work" title="Things I've shipped" />
+
+      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        {projects.map((project, index) => (
+          <Reveal
+            key={project.id}
+            delay={(index % 3) * 80}
+            as="article"
+            className="group flex flex-col rounded-2xl border border-line bg-surface p-6 transition-all hover:-translate-y-1 hover:border-accent/50"
           >
-            <h4 className="font-semibold text-lg">{p.title}</h4>
-            {p.company && (
-              <span
-                className={`block text-xs mt-1 ${
-                  theme === "dark" ? "text-slate-400" : "text-slate-500"
-                }`}
-              >
-                {p.company}
-              </span>
-            )}
-            <p
-              className={`mt-2 text-sm ${
-                theme === "dark" ? "text-slate-300" : "text-slate-600"
-              }`}
-            >
-              {p.desc}
-            </p>
-            <a
-              href={p.link}
-              className="mt-4 inline-block text-sm underline hover:text-[#78a9ff]"
-            >
-              View
-            </a>
-          </article>
+            <span className="font-mono text-xs uppercase tracking-[0.16em] text-muted">
+              {project.company} · {project.year}
+            </span>
+
+            <h3 className="mt-3 font-display text-xl font-bold text-ink">{project.title}</h3>
+            <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{project.desc}</p>
+
+            <ul className="mt-5 flex flex-wrap gap-2">
+              {project.tags.map((tag) => (
+                <li
+                  key={tag}
+                  className="rounded-md bg-accent-soft px-2 py-0.5 text-xs font-medium text-accent"
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          </Reveal>
         ))}
       </div>
     </section>

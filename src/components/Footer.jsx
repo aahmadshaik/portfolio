@@ -1,71 +1,78 @@
-import React from "react";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaGlobe,
-  FaEnvelope,
-  FaWhatsapp,
-} from "react-icons/fa";
-const Footer = ({ theme }) => {
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { ArrowUpRightIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
+import Reveal from "./Reveal";
+import { profile } from "../data/portfolio";
+
+const socials = [
+  { id: "github", label: "GitHub", href: profile.links.github, Icon: FaGithub },
+  { id: "linkedin", label: "LinkedIn", href: profile.links.linkedin, Icon: FaLinkedin },
+  { id: "whatsapp", label: "WhatsApp", href: `https://wa.me/${profile.whatsapp}`, Icon: FaWhatsapp },
+];
+
+const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
-    <footer id="contact" className="max-w-6xl mx-auto px-6 py-12">
-      <div
-        className={`rounded-xl p-6 ring-1 ${
-          theme === "dark"
-            ? "bg-gradient-to-br from-[#071229] to-[#000000] ring-white/5"
-            : "bg-white ring-slate-200 shadow-sm"
-        }`}
-      >
-        <h3 className="text-xl font-bold mb-4">Contact</h3>
-        <div className="flex gap-3 text-lg flex-wrap items-center">
+    <footer id="contact" className="mx-auto max-w-6xl px-6 pb-12 pt-20 md:pt-28">
+      <Reveal className="overflow-hidden rounded-3xl border border-line bg-surface p-8 md:p-14">
+        <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">Get in touch</p>
+        <h2 className="mt-4 max-w-2xl font-display text-3xl font-bold leading-tight tracking-tight text-ink sm:text-4xl md:text-5xl">
+          Let's build something fast, accessible, and genuinely good.
+        </h2>
+        <p className="mt-4 max-w-xl text-muted">
+          {profile.available
+            ? "I'm open to frontend roles and interesting product work. The fastest way to reach me is email."
+            : "Always happy to talk frontend, product, and interesting problems."}
+        </p>
+
+        <div className="mt-8 flex flex-wrap items-center gap-3">
           <a
-            href="mailto:shaikahmadaslam@gmail.com"
-            className="flex items-center gap-2 px-3 py-2 rounded-md bg-slate-100 dark:bg-white/5"
-            title="Email"
+            href={`mailto:${profile.email}`}
+            className="inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-accent-contrast transition-transform hover:-translate-y-0.5"
           >
-            <FaEnvelope /> <span>shaikahmadaslam@gmail.com</span>
+            <EnvelopeIcon className="h-4 w-4" aria-hidden="true" />
+            {profile.email}
           </a>
           <a
-            href="https://wa.me/916361618047"
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center gap-2 px-3 py-2 rounded-md bg-slate-100 dark:bg-white/5"
-            title="WhatsApp"
+            href={`tel:+${profile.whatsapp}`}
+            className="inline-flex items-center gap-2 rounded-xl border border-line bg-elevated px-5 py-3 text-sm font-semibold text-ink transition-colors hover:border-accent/60"
           >
-            <FaWhatsapp /> <span>+91 9701924456</span>
-          </a>
-          <a
-            href="https://github.com/aahmadshaik"
-            target="_blank"
-            rel="noreferrer"
-            className="p-3 rounded-md bg-slate-100 dark:bg-white/5"
-            title="GitHub"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/ahmad-shaik-web-developer/"
-            target="_blank"
-            rel="noreferrer"
-            className="p-3 rounded-md bg-slate-100 dark:bg-white/5"
-            title="LinkedIn"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="https://aslam-portfolio.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-            className="p-3 rounded-md bg-slate-100 dark:bg-white/5"
-            title="Website"
-          >
-            <FaGlobe />
+            {profile.phoneDisplay}
           </a>
         </div>
+
+        <ul className="mt-8 flex flex-wrap gap-3 border-t border-line pt-8">
+          {socials.map((social) => {
+            const Icon = social.Icon;
+            return (
+              <li key={social.id}>
+                <a
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-2 rounded-xl border border-line bg-elevated px-4 py-2.5 text-sm text-ink transition-colors hover:border-accent/60 hover:text-accent"
+                >
+                  <Icon className="h-4 w-4" aria-hidden="true" />
+                  {social.label}
+                  <ArrowUpRightIcon
+                    className="h-3.5 w-3.5 text-muted transition-colors group-hover:text-accent"
+                    aria-hidden="true"
+                  />
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </Reveal>
+
+      <div className="mt-8 flex flex-col items-center justify-between gap-3 text-xs text-muted sm:flex-row">
+        <p>
+          © {year} {profile.name}. Designed & built with React and Tailwind CSS.
+        </p>
+        <a href="#top" className="transition-colors hover:text-accent">
+          Back to top ↑
+        </a>
       </div>
-      <p className="mt-6 text-xs text-slate-500">
-        Designed & built by Aslam Shaik
-      </p>
     </footer>
   );
 };

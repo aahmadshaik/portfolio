@@ -1,41 +1,39 @@
-import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import Certifications from "./components/Certifications";
-import Footer from "./components/Footer";
-import Education from "./components/Education";
 import Experience from "./components/Experience";
+import Education from "./components/Education";
+import Footer from "./components/Footer";
+import { useTheme } from "./hooks/useTheme";
 
 const App = () => {
-  const [theme, setTheme] = useState("dark");
+  const { mode, setMode } = useTheme();
 
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [theme]);
-
-  const toggleTheme = () => setTheme((t) => (t === "dark" ? "light" : "dark"));
   return (
-    <div
-      className={`min-h-screen transition-colors duration-500 ${
-        theme === "dark"
-          ? "bg-gradient-to-b from-[#03051e] via-[#06102a] to-black text-slate-100"
-          : "bg-gradient-to-b from-white to-slate-100 text-slate-900"
-      }`}
-    >
-      {/* <h1>Hello World </h1> */}
-      <Header toggleTheme={toggleTheme} theme={theme} />
-      <Hero theme={theme} />
-      <Projects theme={theme} />
-      <Experience />
+    <div className="min-h-screen">
+      <div className="atmosphere" aria-hidden="true" />
 
-      <Education />
-      <Certifications theme={theme} />
-      <Footer theme={theme} />
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-accent-contrast"
+      >
+        Skip to content
+      </a>
+
+      <Header mode={mode} setMode={setMode} />
+
+      <main id="main">
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Education />
+      </main>
+
+      <Footer />
     </div>
   );
 };
